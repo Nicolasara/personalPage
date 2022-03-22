@@ -18,7 +18,7 @@ function App(props: Props) {
 
   useEffect(() => {
     async function getData() {
-      let response: Repo[] = await getAllRepos(reposPerPage, page);
+      let response = await getAllRepos(reposPerPage, page);
       let user: any = await getUser();
       console.log(user)
       setRepoCount(user.public_repos + user.owned_private_repos);

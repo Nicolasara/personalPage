@@ -1,5 +1,5 @@
 .background {
-    background-image: url("http://localhost:3000/space.jpeg")
+    background-image: url("../public/space.jpeg")
 }
 
 .name-logo {
