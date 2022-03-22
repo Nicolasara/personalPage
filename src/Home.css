@@ -1,0 +1,11 @@
+.background {
+    background-image: url("http://localhost:3000/space.jpeg")
+}
+
+.name-logo {
+    font-weight: 800;
+}
+
+.contact {
+    height: 500px;
+}
