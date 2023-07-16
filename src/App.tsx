@@ -9,18 +9,18 @@ import Contact from './pages/Contact';
 function App() {
   return (
     <Router>
-      <Header/>
+      <Header />
       <div id='content' className="w-5/6 sm:w-2/3 m-auto">
         <div className="App">
           <Routes>
-            <Route path="/" element={ <Home/> } />
-            <Route path="/projects" element={ <Projects reposPerPage={15} pagination={true} columns={3}/> } />
-            <Route path="/projects/:id" element={ <h1>hello there</h1> } />
-            <Route path="/contact" element={ <Contact/> }/>
+            <Route path="/" element={<Home />} />
+            <Route path="/projects" element={<Projects perPage={15} pagination={true} columns={3} />} />
+            <Route path="/projects/:id" element={<h1>hello there</h1>} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </Router>
   );
 }
