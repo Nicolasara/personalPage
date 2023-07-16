@@ -20,16 +20,15 @@ function App({ perPage, pagination, columns }: Props) {
     useEffect(() => {
         async function getData() {
             let response = await getRepos(perPage, page);
-            if (response.length < perPage) {
-                setGotAllRepos(true);
-            } else if (response.length === 0) {
+            if (response.length === 0) {
+                console.log(page, lastPage)
                 setLastPage(page - 1);
                 setPage(page - 1);
+            } else if (response.length < perPage) {
+                setGotAllRepos(true);
+                setLastPage(page);
             }
             setRepos(groupArray(response, columns));
-            response.forEach(element => {
-                console.log(element.homepage)
-            });
             setLoading(false);
         }
         getData();

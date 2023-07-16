@@ -10,8 +10,6 @@ export async function getRepos(perPage: number, page: number, type = "owner"): P
         throw new Error("Error fetching repos");
     } else {
         const repos: Repo[] = response.data.map((repo: any) => new Repo(repo));
-        console.log(response.data);
-        console.log(repos);
         return repos;
     }
 }
