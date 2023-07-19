@@ -14,7 +14,7 @@ function App() {
         <div className="App">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/projects" element={<Projects perPage={15} pagination={true} columns={3} />} />
+            <Route path="/projects" element={<Projects perPage={9} pagination={true} />} />
             <Route path="/projects/:id" element={<h1>hello there</h1>} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
