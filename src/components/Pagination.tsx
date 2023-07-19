@@ -1,10 +1,20 @@
 interface Props {
-    back: () => void,
-    next: () => void,
-    page: number
+    totalPages: number | undefined,
+    page: number,
+    setPage: React.Dispatch<React.SetStateAction<number>>,
 }
 
-function Pagination({ back, next, page }: Props) {
+function Pagination({ totalPages, page, setPage }: Props) {
+    async function next() {
+        if (totalPages === page) return;
+        setPage(page + 1);
+    }
+
+    async function back() {
+        if (page === 1) return;
+        setPage(page - 1);
+    }
+
     return (
         <div className='w-full text-center my-10' >
             < div className="inline-block" >
