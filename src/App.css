@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.createdWithLink-B02PN {
+  visibility: hidden;
+}
+
+.typescript-color {
+  color: #131e96;
+}
+
+.cpp {
+  color: #555555;
+}
