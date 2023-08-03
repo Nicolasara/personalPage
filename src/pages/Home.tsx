@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 import ProjectsPreview from '../components/ProjectsPreview'
-import '../Home.css'
 
 function Home() {
     return (
