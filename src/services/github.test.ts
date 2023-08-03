@@ -5,7 +5,7 @@ const TOTAL_REPOS = 10;
 describe("github", () => {
   it("returns 200 status code", async () => {
     expect(async () => await getRepos(1, 1)).not.toThrow(
-      "Error fetching repos"
+      "Error fetching repos",
     );
   });
 
