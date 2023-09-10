@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Projects from "./components/Projects";
+import Projects from "./pages/Projects";
 import Home from "./pages/Home";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -15,7 +15,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route
               path="/projects"
-              element={<Projects perPage={9} pagination={true} />}
+              element={<Projects />}
             />
             <Route path="/projects/:id" element={<h1>hello there</h1>} />
             <Route path="/contact" element={<Contact />} />
