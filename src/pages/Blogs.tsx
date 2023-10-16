@@ -29,7 +29,7 @@ function Blogs() {
     };
     const sections = [firstSection, secondSection, thirdSection];
     return (
-        <div className="w-2/3 m-auto">
+        <div className="blog">
             <Blog title={blogTitle} sections={sections} />
         </div>
     );

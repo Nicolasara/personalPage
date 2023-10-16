@@ -3,39 +3,41 @@
 @tailwind utilities;
 
 .createdWithLink-B02PN {
-  visibility: hidden;
+    visibility: hidden;
 }
 
 .typescript-color {
-  color: #131e96;
+    color: #131e96;
 }
 
 .cpp {
-  color: #555555;
+    color: #555555;
 }
 
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+        "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 .background {
-  background-image: url("../public/space.jpeg");
+    background-image: url("../public/space.jpeg");
 }
 
 .name-logo {
-  font-weight: 800;
+    font-weight: 800;
 }
 
 .contact {
-  height: 500px;
+    height: 500px;
+}
+
+.blog {
+    width: 65%;
 }
